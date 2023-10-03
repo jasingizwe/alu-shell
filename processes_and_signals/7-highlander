@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-
+# Function to handle SIGTERM signal
+function sigterm_handler() {
+  echo "I am invincible!!!"
+  exit 0
+}
 # Trap the SIGTERM signal so that we can display a message when we receive it.
 trap 'echo "I am invincible!!!"' SIGTERM
 
