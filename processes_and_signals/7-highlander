@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Trap the SIGTERM signal so that we can display a message when we receive it.
 trap 'echo "I am invincible!!!"' SIGTERM
