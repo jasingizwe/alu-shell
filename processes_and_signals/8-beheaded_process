@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
-# Find and stop the 7-highlander process
-pkill -f "7-highlander.sh"
+# Get the process ID (PID) of the `7-highlander` process.
+pid=$(pgrep -f "7-highlander")
 
+# If the PID is not empty, send a SIGKILL signal to the process to terminate it.
+if [ -n "$pid" ]; then
+  kill -9 "$pid"
+fi
