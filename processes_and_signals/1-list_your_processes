@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Use pstree to display the process hierarchy
+pstree -p
+
